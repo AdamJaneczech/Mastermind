@@ -48,5 +48,12 @@ def mastermind():
         elif(attempt == 10):
             print('You lost!')
         attempt += 1
-        
+#for tweaking the final version    
+input_string = input("Enter four numbers separated by spaces: ")
+
+numbers_str = input_string.split()
+
+numbers = [int(num) for num in numbers_str]
+
+print("The list of numbers is:", numbers)    
 mastermind()
